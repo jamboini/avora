@@ -30,11 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.url = new Awesomium.Windows.Forms.ToolStripAddressBox();
+            this.web = new Awesomium.Windows.Forms.WebControl();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.url = new Awesomium.Windows.Forms.ToolStripAddressBox();
-            this.web = new Awesomium.Windows.Forms.WebControl();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,12 +45,30 @@
             this.toolStripButton1,
             this.toolStripButton2,
             this.toolStripButton3,
-            this.url});
+            this.url,
+            this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(998, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // url
+            // 
+            this.url.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.url.Name = "url";
+            this.url.Size = new System.Drawing.Size(863, 25);
+            this.url.URL = new System.Uri("http://www.jphweb.com", System.UriKind.Absolute);
+            this.url.WebControl = this.web;
+            // 
+            // web
+            // 
+            this.web.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.web.Location = new System.Drawing.Point(0, 25);
+            this.web.Name = "web";
+            this.web.Size = new System.Drawing.Size(998, 562);
+            this.web.Source = new System.Uri("http://www.jphweb.com", System.UriKind.Absolute);
+            this.web.TabIndex = 1;
             // 
             // toolStripButton1
             // 
@@ -81,22 +100,14 @@
             this.toolStripButton3.Text = "Refresh";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
-            // url
+            // toolStripButton4
             // 
-            this.url.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.url.Name = "url";
-            this.url.Size = new System.Drawing.Size(886, 25);
-            this.url.URL = new System.Uri("http://www.jphweb.com", System.UriKind.Absolute);
-            this.url.WebControl = this.web;
-            // 
-            // web
-            // 
-            this.web.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.web.Location = new System.Drawing.Point(0, 25);
-            this.web.Name = "web";
-            this.web.Size = new System.Drawing.Size(998, 562);
-            this.web.Source = new System.Uri("http://www.jphweb.com", System.UriKind.Absolute);
-            this.web.TabIndex = 1;
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = global::Avora.Properties.Resources.settings;
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "Settings";
             // 
             // Form1
             // 
@@ -123,6 +134,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private Awesomium.Windows.Forms.ToolStripAddressBox url;
         private Awesomium.Windows.Forms.WebControl web;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
     }
 }
 
