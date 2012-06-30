@@ -89,6 +89,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="set-dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="set-dialog.Designer.cs">
+      <DependentUpon>set-dialog.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +108,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="set-dialog.resx">
+      <DependentUpon>set-dialog.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Avora_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

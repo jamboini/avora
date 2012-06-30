@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Avora.exe" version="1.0.0.1" publicKeyToken="b9fdbd3f19e1b78d" language="en-GB" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Avora" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Avora.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Avora.exe" size="179712">
+      <assemblyIdentity name="Avora" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2VN3tbFjKglgwqpGYOovNLAazzMCIeSTkFlq9+rYpmc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Awesomium.Core.dll" size="209720">
+      <assemblyIdentity name="Awesomium.Core" version="1.6.6.0" publicKeyToken="E1A0D7C8071A5214" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cFCeVCZCJnpNwmMBW5UoiGgjH2nnecwgfLzeIheAwwk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Awesomium.Windows.Forms.dll" size="406840">
+      <assemblyIdentity name="Awesomium.Windows.Forms" version="1.6.6.0" publicKeyToken="9BD24830FBE304A0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NeS1nVT0DfMCKsX8CimXpJjXvPPrBuug2OOAbm8EyDs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Avora.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=JamesHancock-PC\James Hancock" issuerKeyHash="d36decd1a29386167470e9a0396255a94b1b0be6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>RfHO6DPjP3xf8oaljhu1U45aLstgYThTG6sF15e8RQY=</DigestValue></Reference></SignedInfo><SignatureValue>0euLcX0I0uTR/+YSyCHiYdgQRpUePFQ+UnaaLfh4lpaFY2UvdpH2/iMT+AxEX6HCpIw2mSO7CYrYU46aeD+Q0quVwUnYqo6xjBbeaKxky72YkOlupPtVpnv/NKoE/i8dhe9bbWz5Wo7R0fO4rEgLsiqbPPaHfM4ll5ljb5Io0/w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4ZkwRCp2YdAdj/c7ikqm90S+YXTxQ5+vFKK9wQbrD8OqzPi1xIjX5nvoRWKnatjRaQsaausuqS42LraACxO4zta95xhDIU1ctLiD7LnqCHL0xvOe4reiRAhsITWkFzfKFUgi5u18SkLSlBqx4zbJGszMQkhTw5eY1YDg1TauhcU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0645bc97d705ab1b53386160cb2e5a8e53b51b8ea586f25f7c3fe333e8cef145" Description="" Url=""><as:assemblyIdentity name="Avora.exe" version="1.0.0.1" publicKeyToken="b9fdbd3f19e1b78d" language="en-GB" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=JamesHancock-PC\James Hancock</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>GW0r0scQwf8dLOkFP0aYXUxsjBlXFR+lE+lUAfVuRS0=</DigestValue></Reference></SignedInfo><SignatureValue>kLbvdCWn2pCgRAzQdshP9Ok0lYDoCFKLsvkabQmHR+oIYyxVQYXzyxu3uisKjKdYHaEYqY0UIxcqi/2q781aNsA0+RIi5kQzWaW/bBL+pGAmQJZgmQRpr8e8oT3LWpCHypOrsIkvJdjDSqhTTu7yz/ylD/SBGL0Hza9G81Ry2c8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qwazzoChyAWGyEYwLH+wglOUpwT1lYveCreY1zxiZoXjvUqW9l36mMPqGmTWotkBk1wRD+yNz2HMY9ajApn8T5rFIsdXXank2LwQHAcvMZFRwmJ7evssKs4W3T7VGnjO8cunrt5JDSi1UovmzvjGTjmjLmfLwj4pYRGVKVhpSb8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICDTCCAXagAwIBAgIQasdVRA/NraxG/7k+cuzQQDANBgkqhkiG9w0BAQsFADBFMUMwQQYDVQQDHjoASgBhAG0AZQBzAEgAYQBuAGMAbwBjAGsALQBQAEMAXABKAGEAbQBlAHMAIABIAGEAbgBjAG8AYwBrMB4XDTEyMDYwNzE1MjEyMVoXDTEzMDYwNzIxMjEyMVowRTFDMEEGA1UEAx46AEoAYQBtAGUAcwBIAGEAbgBjAG8AYwBrAC0AUABDAFwASgBhAG0AZQBzACAASABhAG4AYwBvAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4ZkwRCp2YdAdj/c7ikqm90S+YXTxQ5+vFKK9wQbrD8OqzPi1xIjX5nvoRWKnatjRaQsaausuqS42LraACxO4zta95xhDIU1ctLiD7LnqCHL0xvOe4reiRAhsITWkFzfKFUgi5u18SkLSlBqx4zbJGszMQkhTw5eY1YDg1TauhcUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCeBM6u6PSScpVcKlpc9IAGwKD5UgvxSWjxLMP9X3ghq8voDiyvRY7owouADaHXO7Fq0KmVO0mzV+a6qBLmbTSlfYdjjM4PZXen2qGEiDBk5wvG9S4lIL8N+lisbb0miAHxxNWGmQkHoLRA+cOWd2946pnHPWdGeOTKdLm1vB++CA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
